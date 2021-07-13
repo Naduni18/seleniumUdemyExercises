@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package demo;
+
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+public class CarLoan {
+
+	@Test
+	public void test1() {
+		System.out.println("hello testng");
+	}
+	
+	@Test
+	public void test2() {
+		System.out.println("hello testng2");
+	}
+	
+}

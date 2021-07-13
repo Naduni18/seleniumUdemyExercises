@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package savingsDepartment;
+
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+public class SeniorCitizenAccount {
+	@Test
+	public void login() {
+		System.out.println("Senior Citizen Account login");
+	}
+	@Test
+	public void mobile_login() {
+		System.out.println("Senior Citizen Account mobile login");
+	}
+	
+	@Test
+	public void logout() {
+		System.out.println("Senior Citizen Account logout");
+	}
+	
+	@Test
+	public void mobile_logout() {
+		System.out.println("Senior Citizen Account mobile logout");
+	}
+}

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="17" total="70" passed="53" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-08T10:35:19 IST" name="Demo Suite" finished-at="2021-07-08T10:35:19 IST" duration-ms="704">
+    <groups>
+      <group name="smoke">
+        <method signature="PersonalLoan.login()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" name="login" class="loanDepartment.PersonalLoan"/>
+        <method signature="CarLoan.apply()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" name="apply" class="loanDepartment.CarLoan"/>
+        <method signature="KidsAccount.mobile_logout(java.lang.String,java.lang.String)[pri:0, instance:savingsDepartment.KidsAccount@40ef3420]" name="mobile_logout" class="savingsDepartment.KidsAccount"/>
+        <method signature="SavingsAccount.logout()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" name="logout" class="savingsDepartment.SavingsAccount"/>
+        <method signature="SeniorCitizenAccount.mobile_logout()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" name="mobile_logout" class="savingsDepartment.SeniorCitizenAccount"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2021-07-08T10:35:19 IST" name="Demo Test2" finished-at="2021-07-08T10:35:19 IST" duration-ms="230">
+      <class name="loanDepartment.BusinessLoan">
+        <test-method signature="apply()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="apply" finished-at="2021-07-08T10:35:19 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apply -->
+        <test-method signature="approve()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="approve" finished-at="2021-07-08T10:35:19 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approve -->
+        <test-method signature="getClientDetails()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="getClientDetails" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientDetails -->
+        <test-method signature="getLoanStatus()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="getLoanStatus" finished-at="2021-07-08T10:35:19 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoanStatus -->
+        <test-method signature="login()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="login" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="removeLoan()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="removeLoan" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeLoan -->
+        <test-method signature="sendOutstandingWarn()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="sendOutstandingWarn" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendOutstandingWarn -->
+        <test-method signature="setClientDetails()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="setClientDetails" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setClientDetails -->
+        <test-method signature="setLoanStatus()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="setLoanStatus" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoanStatus -->
+        <test-method signature="setNewLoan()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="setNewLoan" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewLoan -->
+      </class> <!-- loanDepartment.BusinessLoan -->
+    </test> <!-- Demo Test2 -->
+    <test started-at="2021-07-08T10:35:19 IST" name="Demo Test" finished-at="2021-07-08T10:35:19 IST" duration-ms="466">
+      <class name="loanDepartment.PersonalLoan">
+        <test-method signature="apply()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="apply" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apply -->
+        <test-method signature="login()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="login" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="mobile_logout()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="mobile_logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_logout -->
+        <test-method signature="setLoanStatus()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="setLoanStatus" finished-at="2021-07-08T10:35:19 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoanStatus -->
+        <test-method signature="setNewLoan()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="setNewLoan" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewLoan -->
+        <test-method signature="approve(java.lang.String,java.lang.String)[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="approve" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approve -->
+        <test-method signature="getClientDetails()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="getClientDetails" finished-at="2021-07-08T10:35:19 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientDetails -->
+        <test-method signature="getLoanStatus()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="getLoanStatus" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoanStatus -->
+        <test-method signature="logout()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="removeLoan()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="removeLoan" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeLoan -->
+        <test-method signature="sendOutstandingWarn()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="sendOutstandingWarn" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendOutstandingWarn -->
+        <test-method signature="setClientDetails()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="setClientDetails" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setClientDetails -->
+        <test-method signature="reject()[pri:0, instance:loanDepartment.PersonalLoan@6ac13091]" started-at="2021-07-08T10:35:19 IST" name="reject" finished-at="2021-07-08T10:35:19 IST" depends-on-methods="PersonalLoan.apply, PersonalLoan.login" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reject -->
+      </class> <!-- loanDepartment.PersonalLoan -->
+      <class name="loanDepartment.CarLoan">
+        <test-method signature="apply()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="apply" finished-at="2021-07-08T10:35:19 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apply -->
+        <test-method signature="approve()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="approve" finished-at="2021-07-08T10:35:19 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approve -->
+        <test-method signature="getClientDetails()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="getClientDetails" finished-at="2021-07-08T10:35:19 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientDetails -->
+        <test-method signature="getLoanStatus()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="getLoanStatus" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoanStatus -->
+        <test-method signature="login()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="login" finished-at="2021-07-08T10:35:19 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="mobile_login()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="mobile_login" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_login -->
+        <test-method signature="mobile_logout()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="mobile_logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_logout -->
+        <test-method signature="reject()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="reject" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reject -->
+        <test-method signature="removeLoan()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="removeLoan" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeLoan -->
+        <test-method signature="sendOutstandingWarn()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="sendOutstandingWarn" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendOutstandingWarn -->
+        <test-method signature="setClientDetails()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="setClientDetails" finished-at="2021-07-08T10:35:19 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setClientDetails -->
+        <test-method signature="setLoanStatus()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="setLoanStatus" finished-at="2021-07-08T10:35:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLoanStatus -->
+        <test-method signature="setNewLoan()[pri:0, instance:loanDepartment.CarLoan@1a04f701]" started-at="2021-07-08T10:35:19 IST" name="setNewLoan" finished-at="2021-07-08T10:35:19 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewLoan -->
+      </class> <!-- loanDepartment.CarLoan -->
+      <class name="loanDepartment.HouseLoan">
+        <test-method signature="reject()[pri:0, instance:loanDepartment.HouseLoan@5e316c74]" started-at="2021-07-08T10:35:19 IST" name="reject" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reject -->
+      </class> <!-- loanDepartment.HouseLoan -->
+    </test> <!-- Demo Test -->
+    <test started-at="2021-07-08T10:35:19 IST" name="Demo Test3" finished-at="2021-07-08T10:35:19 IST" duration-ms="121">
+      <class name="loanDepartment.BusinessLoan">
+        <test-method is-config="true" signature="beforeSuitdo()[pri:0, instance:loanDepartment.BusinessLoan@4facf68f]" started-at="2021-07-08T10:35:19 IST" name="beforeSuitdo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuitdo -->
+      </class> <!-- loanDepartment.BusinessLoan -->
+      <class name="savingsDepartment.KidsAccount">
+        <test-method is-config="true" signature="beforeSuitedo()[pri:0, instance:savingsDepartment.KidsAccount@40ef3420]" started-at="2021-07-08T10:35:19 IST" name="beforeSuitedo" finished-at="2021-07-08T10:35:19 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuitedo -->
+        <test-method is-config="true" signature="beforeTestdo()[pri:0, instance:savingsDepartment.KidsAccount@40ef3420]" started-at="2021-07-08T10:35:19 IST" name="beforeTestdo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestdo -->
+        <test-method signature="login()[pri:0, instance:savingsDepartment.KidsAccount@40ef3420]" started-at="2021-07-08T10:35:19 IST" name="login" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="mobile_login()[pri:0, instance:savingsDepartment.KidsAccount@40ef3420]" started-at="2021-07-08T10:35:19 IST" name="mobile_login" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_login -->
+        <test-method signature="mobile_logout(java.lang.String,java.lang.String)[pri:0, instance:savingsDepartment.KidsAccount@40ef3420]" started-at="2021-07-08T10:35:19 IST" name="mobile_logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_logout -->
+        <test-method signature="logout()[pri:0, instance:savingsDepartment.KidsAccount@40ef3420]" started-at="2021-07-08T10:35:19 IST" name="logout" finished-at="2021-07-08T10:35:19 IST" depends-on-methods="savingsDepartment.login" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- savingsDepartment.KidsAccount -->
+      <class name="savingsDepartment.SavingsAccount">
+        <test-method is-config="true" signature="beforeClassdo()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="beforeClassdo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassdo -->
+        <test-method is-config="true" signature="beforeMethoddo()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="beforeMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethoddo -->
+        <test-method signature="login()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="login" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="beforeMethoddo()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="beforeMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethoddo -->
+        <test-method signature="logout()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="beforeMethoddo()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="beforeMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethoddo -->
+        <test-method signature="mobile_login()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="mobile_login" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_login -->
+        <test-method is-config="true" signature="beforeMethoddo()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="beforeMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethoddo -->
+        <test-method signature="mobile_logout(java.lang.String,java.lang.String)[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="mobile_logout" data-provider="getData" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_logout -->
+        <test-method is-config="true" signature="beforeMethoddo()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="beforeMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethoddo -->
+        <test-method signature="mobile_logout(java.lang.String,java.lang.String)[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="mobile_logout" data-provider="getData" finished-at="2021-07-08T10:35:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_logout -->
+        <test-method is-config="true" signature="beforeMethoddo()[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="beforeMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethoddo -->
+        <test-method signature="mobile_logout(java.lang.String,java.lang.String)[pri:0, instance:savingsDepartment.SavingsAccount@498d318c]" started-at="2021-07-08T10:35:19 IST" name="mobile_logout" data-provider="getData" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_logout -->
+      </class> <!-- savingsDepartment.SavingsAccount -->
+      <class name="savingsDepartment.SeniorCitizenAccount">
+        <test-method signature="login()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="login" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethoddo()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="afterMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethoddo -->
+        <test-method signature="logout(java.lang.String)[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="afterMethoddo()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="afterMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethoddo -->
+        <test-method signature="mobile_login()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="mobile_login" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_login -->
+        <test-method is-config="true" signature="afterMethoddo()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="afterMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethoddo -->
+        <test-method signature="mobile_logout()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="mobile_logout" finished-at="2021-07-08T10:35:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_logout -->
+        <test-method is-config="true" signature="afterMethoddo()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="afterMethoddo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethoddo -->
+        <test-method is-config="true" signature="afterClassdo()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="afterClassdo" finished-at="2021-07-08T10:35:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassdo -->
+        <test-method is-config="true" signature="afterTestdo()[pri:0, instance:savingsDepartment.SeniorCitizenAccount@6e171cd7]" started-at="2021-07-08T10:35:19 IST" name="afterTestdo" finished-at="2021-07-08T10:35:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestdo -->
+      </class> <!-- savingsDepartment.SeniorCitizenAccount -->
+    </test> <!-- Demo Test3 -->
+  </suite> <!-- Demo Suite -->
+</testng-results>

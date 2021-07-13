@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package UdemyTutorial.SeleniumFramework;
+
+import java.io.IOException;
+import org.testng.AssertJUnit;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import pageObjects.LandingPage;
+import resources.Base;
+
+/**
+ * @author Naduni
+ *
+ */
+public class ValidateTitle extends Base{
+
+	@Test(dataProvider = "getData")
+	public void basePageNavigation(String title, String testCase) throws IOException {
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+		
+		LandingPage l = new LandingPage(driver);
+		AssertJUnit.assertEquals(l.getTitle().getText(), testCase);
+				
+		driver.close();
+		driver.quit();
+	}
+    @DataProvider
+	public Object[][] getData(){
+		Object[][] data = new Object[1][2];
+		
+		data[0][0]="Featured Courses";
+		data[0][1]="correct title";
+
+		return data;
+		
+	}
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Suite">
+<listeners>
+<listener class-name="savingsDepartment.Listners"/>
+</listeners>
+<parameter name="URL" value="https://www.google.com/"/>
+  <test thread-count="5" name="Demo Test">
+  <parameter name="URL2" value="https://www.google.com/"/>
+    <classes>
+    
+      <class name="loanDepartment.CarLoan"/>
+      <class name="loanDepartment.PersonalLoan"/>
+       <class name="loanDepartment.HouseLoan">
+       
+        <methods>
+     <include name="reject"/>
+   
+       </methods>
+       </class>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="Demo Test2">
+    <classes>
+    <class name="loanDepartment.BusinessLoan">
+    <methods>
+     <exclude name="reject"/>
+      <exclude name="mobile_.*"/>
+    </methods>
+     
+     </class> 
+    </classes>
+    </test>
+     <test thread-count="5" name="Demo Test3">
+      <parameter name="URL2" value="https://www.google.com/"/>
+    <packages>
+    <package name="savingsDepartment"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

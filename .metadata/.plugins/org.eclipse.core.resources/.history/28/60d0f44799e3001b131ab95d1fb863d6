@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package UdemyTutorial.SourceLabs;
+
+/**
+ * @author Naduni
+ *
+ */
+public class Demo {
+	System.setProperty("webdriver.chrome.driver", currentDirectory + "\\browserdrivers\\chromedriver.exe");
+}

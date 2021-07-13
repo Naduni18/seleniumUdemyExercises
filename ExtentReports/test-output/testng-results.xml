@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-09T14:02:42 IST" name="Default suite" finished-at="2021-07-09T14:02:55 IST" duration-ms="12501">
+    <groups>
+    </groups>
+    <test started-at="2021-07-09T14:02:42 IST" name="Default test" finished-at="2021-07-09T14:02:55 IST" duration-ms="12501">
+      <class name="udemyTutorials.ExtentReports.Demo">
+        <test-method is-config="true" signature="config()[pri:0, instance:udemyTutorials.ExtentReports.Demo@1d119efb]" started-at="2021-07-09T14:02:42 IST" name="config" finished-at="2021-07-09T14:02:43 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method signature="test1()[pri:0, instance:udemyTutorials.ExtentReports.Demo@1d119efb]" started-at="2021-07-09T14:02:43 IST" name="test1" finished-at="2021-07-09T14:02:55 IST" duration-ms="11946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- udemyTutorials.ExtentReports.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

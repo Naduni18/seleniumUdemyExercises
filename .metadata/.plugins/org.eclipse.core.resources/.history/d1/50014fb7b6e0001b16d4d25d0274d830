@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package demo;
+
+import java.io.IOException;
+
+/**
+ * @author Naduni
+ *
+ */
+public class TestCaseFile {
+	public static void main(String[] args) throws IOException{
+		Demo dem = new Demo();
+		dem.getArow("Sheet2","buy");
+		
+	}
+}

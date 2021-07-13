@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package savingsDepartment;
+
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+public class SavingsAccount {
+	@Test
+	public void login() {
+		System.out.println("hello testng2");
+	}
+	@Test
+	public void mobile_login() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void logout() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void mobile_logout() {
+		System.out.println("hello testng2");
+	}
+}

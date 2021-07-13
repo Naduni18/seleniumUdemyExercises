@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package UdemyTutorial.SeleniumFramework;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+/**
+ * @author Naduni
+ *
+ */
+public class Base {
+	String currentDirectory = System.getProperty("user.dir");
+	
+	public void initializeDriver() throws FileNotFoundException {
+		
+	Properties prop = new Properties();
+	FileInputStream file = new FileInputStream(currentDirectory+"//SeleniumFramework//data.properties");
+	
+	}
+}

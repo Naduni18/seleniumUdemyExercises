@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package UdemyTutorial.SeleniumFramework;
+
+import java.util.Properties;
+
+/**
+ * @author Naduni
+ *
+ */
+public class Base {
+Properties prop = new Properties();
+}

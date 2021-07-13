@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package loanDepartment;
+
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+public class PersonalLoan {
+	@Test
+	public void login() {
+		System.out.println("hello testng2");
+	}
+}

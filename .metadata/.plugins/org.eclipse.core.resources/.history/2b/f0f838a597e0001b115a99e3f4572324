@@ -1,0 +1,27 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+/**
+ * 
+ */
+
+/**
+ * @author Naduni
+ *
+ */
+public class Demo {
+	static String currentDirectory = System.getProperty("user.dir");
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		
+		FileInputStream fin = new FileInputStream(currentDirectory+"\\dataSets\\data.xlsx");
+		XSSFWorkbook wb = new XSSFWorkbook(fin);
+
+	}
+
+}

@@ -1,0 +1,69 @@
+/**
+ * 
+ */
+package loanDepartment;
+
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+public class HouseLoan {
+
+	@Test
+	public void login() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void apply() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void reject() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void approve() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void getClientDetails() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void setClientDetails() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void getLoanStatus() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void setLoanStatus() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void sendOutstandingWarn() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void setNewLoan() {
+		System.out.println("hello testng2");
+	}
+	
+	@Test
+	public void removeLoan() {
+		System.out.println("hello testng2");
+	}
+	
+}

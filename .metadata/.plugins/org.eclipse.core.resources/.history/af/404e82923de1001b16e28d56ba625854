@@ -1,0 +1,43 @@
+\\**
+ * 
+ *\\
+package UdemyTutorial.SeleniumFramework;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+\\**
+ * @author Naduni
+ *
+ *\\
+public class Base {
+	String currentDirectory = System.getProperty("user.dir");
+	
+	public void initializeDriver() throws IOException {
+		
+	Properties prop = new Properties();
+	FileInputStream fls = new FileInputStream(currentDirectory+"\\src\\main\\java\\UdemyTutorial\\SeleniumFramework\\data.properties");
+	prop.load(fls);
+	
+	String browserName  = prop.getProperty("browser");
+	
+	if(browserName=="chrome") {
+		
+		System.setProperty("webdriver.chrome.driver", currentDirectory+"\\browserdrivers\\chromedriver.exe");	   
+		WebDriver driver = new ChromeDriver();
+		
+	}else if(browserName=="firefox") {
+		
+	}else if(browserName=="IE") {
+		
+	}else if(browserName=="edge") {
+		
+	}
+	
+	}
+}

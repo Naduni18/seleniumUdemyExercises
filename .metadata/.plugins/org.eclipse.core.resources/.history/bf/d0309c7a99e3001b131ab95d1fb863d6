@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package UdemyTutorial.SourceLabs;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+/**
+ * @author Naduni
+ *
+ */
+public class Demo {
+	String currentDirectory = System.getProperty("user.dir");
+	
+	
+	
+	public void demoMethod() 
+	{
+		
+	System.setProperty("webdriver.chrome.driver", currentDirectory + "\\browserdrivers\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://www.google.com/");
+	}
+	
+	
+}

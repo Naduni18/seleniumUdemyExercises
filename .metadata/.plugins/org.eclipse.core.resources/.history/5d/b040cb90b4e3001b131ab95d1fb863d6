@@ -1,0 +1,3 @@
+ControlFocus("Open","","Edit1")
+ControlSetText("Open","","Edit1","E:\documents\story books\2d.pdf")
+ControlClick("Open","","Button1")

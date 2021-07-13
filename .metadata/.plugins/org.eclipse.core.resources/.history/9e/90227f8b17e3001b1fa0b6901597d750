@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package cucumberOptions;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+/**
+ * @author Naduni
+ *
+ */
+@RunWith(Cucumber.class)
+@CucumberOptions(
+	features="/CucumberFramework2/src/test/java/features",
+	glue="StepDefinitions"
+)
+public class TestRunner {
+
+}

@@ -1,0 +1,52 @@
+locators should be unique
+selenium scans for locators - from top left corner of the browser window
+can't use compound class names as locators - because of the spaces
+if an attribute which has common value ( for example - <input type="text" class="inputtext _55r1 _6luy" name="email" id="email" data> - in this tag both name and id attributes has "email" as their value - common value) try not to use those attributes in XPath or CSS
+XPath
+
+relative XPath - not depend on parent nodes
+absolute XPath - depends on parent nodes
+relative XPath is better than absolute XPath 
+To validate an XPath - go to Inspect -> Console - type XPath value inside $x(" ")   -  example - $x("//*[@id=\'pass\']")
+XPath --- >  //tagName[@attribute='value']
+//*[@attribute='value']  - pick any tag name XPath 
+if code is not yet available - using visible text of an element -
+                          -for example - < p class=”text”>Selenium Feature</p>
+
+                                                 //p[text()='Selenium Feature']
+
+CSS
+
+
+
+To validate a CSS selector - go to Inspect -> Console - type CSS selector value inside $(" ")   -  example - $("#email")
+CSS selectors ---> tagName[attribute='value']       
+[attribute='value'] - pick any tag name CSS 
+other available syntaxes for CSS selector ---> tagName#id                                                                                                   ---> tagName.classname
+other available syntaxes for CSS selector(pick any tag name) ---> #id                                                                                                                  ---> .classname
+if class name has spaces replace them with a dot (.) -
+            for example - <input class="input r4 wide mb16 mt8 username"type="email">
+
+            css selector = input.input.r4.wide.mb16.mt8.username
+
+reguler expressions (when only one partial unique identifier available or identifier is too long)----->>>>
+
+for XPath --->//tagName[contains(@attribute,'value')]
+for CSS   ---> tagName[attribute*='value']   
+parent child relationship
+
+  when there aren;t any static unique identifier in child
+
+for XPath --->define Xpath to the closest parent tag which has unique static attribute and then travers from it to the tag.
+parentXpath/siblingtagname[index]
+example - //div[@class='RNNXgb']/div/div[2]/input
+  when there aren;t any static unique identifier in parent 
+
+for XPath --->define Xpath to the child tag which has unique static attribute and then travers from it to the immediate parent  tag (target).
+childXPath/parent::parenttagname
+example - //div[@class='RNNXgb']/parent::div
+sibling  relationship (when parent and the target tag both doesn't have any static unique identifier - but one sibling has a static unique identifier)
+
+for XPath --->define Xpath to the closest sibling tag which has unique static attribute and then travers from it to the tag.
+siblingsXpath/following-sibling::tagName[index]
+example - //li[@name='defaultPage']/following-sibling::li[2]

@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package resources;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+/**
+ * @author Naduni
+ *
+ */
+public class ExtentReporterNG {
+	String currentDirectory = System.getProperty("user.dir");
+	ExtentReports er;
+	public void config() {
+		String path_ = currentDirectory+"//testResults//index.html";
+		ExtentSparkReporter report_ = new ExtentSparkReporter(path_);
+		report_.config().setReportName("web automation results");
+		report_.config().setDocumentTitle("test results");
+		
+		er = new ExtentReports();
+		er.attachReporter(report_);
+		er.setSystemInfo("Tester", "Naduni");
+	}
+}

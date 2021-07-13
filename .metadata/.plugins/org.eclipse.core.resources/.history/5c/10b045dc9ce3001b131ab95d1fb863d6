@@ -1,0 +1,45 @@
+/**
+ * 
+ */
+package UdemyTutorial.SourceLabs;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.MutableCapabilities;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+public class Demo {
+	String currentDirectory = System.getProperty("user.dir");
+
+	@Test
+	public void demoMethod() throws InterruptedException, MalformedURLException {
+
+		System.setProperty("webdriver.chrome.driver", currentDirectory + "\\browserdrivers\\chromedriver.exe");
+
+		MutableCapabilities sauceOptions = new MutableCapabilities();
+		sauceOptions.setCapability("screenResolution", "800x600");
+
+		ChromeOptions browserOptions = new ChromeOptions();
+		browserOptions.setExperimentalOption("w3c", true);
+		browserOptions.setCapability("platformName", "Windows 8.1");
+		browserOptions.setCapability("browserVersion", "91.0");
+		browserOptions.setCapability("sauce:options", sauceOptions);
+
+		WebDriver driver = new RemoteWebDriver(new URL(""), browserOptions);
+		driver.get("https://www.google.com/");
+		driver.manage().window().maximize();
+		System.out.println(driver.getCurrentUrl());
+		Thread.sleep(1000);
+		driver.close();
+		driver.quit();
+	}
+
+}

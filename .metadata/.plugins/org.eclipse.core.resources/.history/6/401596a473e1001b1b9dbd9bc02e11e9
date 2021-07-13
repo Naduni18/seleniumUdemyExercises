@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+package UdemyTutorial.SeleniumFramework;
+
+import java.io.IOException;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import pageObjects.LandingPage;
+import pageObjects.LoginPage;
+import resources.Base;
+
+/**
+ * @author Naduni
+ *
+ */
+public class HomePage extends Base{
+	
+	@Test(dataProvider = "getData")
+	public void basePageNavigation(String email,String password, String testCase) throws IOException {
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+		
+		LandingPage l = new LandingPage(driver);
+		l.getLogin().click();
+		
+		LoginPage lp = new LoginPage(driver);
+		lp.getEmail().sendKeys(email);
+		lp.getPassword().sendKeys(password);
+		lp.getLogin().click();
+		System.out.println(testCase);
+		
+		driver.close();
+		driver.quit();
+	}
+    @DataProvider
+	public Object[][] getData(){
+		Object[][] data = new Object[1][3];
+		
+		data[0][0]="18naduni@gmail.com";
+		data[0][1]="redberry*7";
+		data[0][2]="invalid email,invalid password";
+		return data;
+		
+	}
+}

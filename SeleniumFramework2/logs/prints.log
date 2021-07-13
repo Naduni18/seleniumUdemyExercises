@@ -1,0 +1,7 @@
+23:55:56.293 [TestNG] INFO  resources.Base - validate title
+23:56:05.026 [TestNG] INFO  resources.Base - finish
+23:56:54.637 [TestNG] INFO  resources.Base - validate title
+23:56:55.517 [TestNG] DEBUG resources.Base - success
+23:56:55.751 [TestNG] INFO  resources.Base - initialization is successful
+23:56:58.065 [TestNG] INFO  resources.Base - invalid email,invalid password
+23:56:58.715 [TestNG] INFO  resources.Base - finish

@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package UdemyTutorial.SourceLabs;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+
+public class AutoITFileUpload {
+	String currentDirectory = System.getProperty("user.dir");
+
+	@Test
+	public void demoMethod() throws InterruptedException, IOException {
+
+		System.setProperty("webdriver.chrome.driver", currentDirectory + "\\browserdrivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://altoconvertpdftojpg.com/");
+		driver.manage().window().maximize();	
+		driver.findElement(By.xpath("//button[@id='dropzoneInput-label']")).click();
+		Thread.sleep(3000);
+		Runtime.getRuntime().exec( currentDirectory + "\\AutoITScripts\\fileupload.exe");
+		WebDriverWait wait = new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Convert Now!')]")));
+		driver.findElement(By.xpath("//button[contains(text(),'Convert Now!')]")).click();
+		//driver.close();
+		//driver.quit();
+	}
+}
+
+//span[text()='Convert']/parent::div/parent::button

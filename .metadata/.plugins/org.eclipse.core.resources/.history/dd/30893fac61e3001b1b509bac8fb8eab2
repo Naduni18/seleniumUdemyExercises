@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="UdemyTutorial.SeleniumFramework.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="UdemyTutorial.SeleniumFramework.HomePage">
+        <methods>
+          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- UdemyTutorial.SeleniumFramework.HomePage -->
+      <class name="UdemyTutorial.SeleniumFramework.ValidateTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- UdemyTutorial.SeleniumFramework.ValidateTitle -->
+      <class name="UdemyTutorial.SeleniumFramework.ValidateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- UdemyTutorial.SeleniumFramework.ValidateNavigationBar -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

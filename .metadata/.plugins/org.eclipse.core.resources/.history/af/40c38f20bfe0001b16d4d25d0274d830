@@ -1,0 +1,19 @@
+package alpha;
+
+import org.apache.logging.log4j.*;
+/**
+ * @author Naduni
+ *
+ */
+public class Demo {
+
+	/**
+	 * @param args
+	 */
+	private static Logger log =LogManager.getLogger(Demo.class.getName());
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

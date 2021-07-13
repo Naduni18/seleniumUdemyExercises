@@ -1,0 +1,59 @@
+/**
+ * 
+ */
+package UdemyTutorial.SeleniumFramework;
+
+import java.io.IOException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import pageObjects.LandingPage;
+import resources.Base;
+
+/**
+ * @author Naduni
+ *
+ */
+public class ValidateTitle extends Base {
+	 public static Logger log =LogManager.getLogger(Base.class.getName());
+	 public WebDriver driver;
+	@BeforeTest
+	public void initialize() throws IOException {
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+	}
+
+	@Test(dataProvider = "getData")
+	public void basePageNavigation(String title, String testCase) throws IOException {
+
+		LandingPage l = new LandingPage(driver);
+		AssertJUnit.assertEquals(l.getTitle().getText(), title);
+		 log.info(testCase);
+
+	}
+
+	@AfterTest
+	public void tearDown() {
+		driver.close();
+		driver.quit();
+	}
+
+	@DataProvider
+	public Object[][] getData() {
+		Object[][] data = new Object[1][2];
+
+		data[0][0] = "FEATURED COURSESw";
+		data[0][1] = "correct title";
+
+		return data;
+
+	}
+}

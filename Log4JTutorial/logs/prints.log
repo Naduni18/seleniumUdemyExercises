@@ -1,0 +1,6 @@
+20:24:50.167 [main] DEBUG beta.Demo2 - I am a debug
+20:24:50.170 [main] ERROR beta.Demo2 - I am an error
+20:24:50.170 [main] INFO  beta.Demo2 - I am an info
+20:24:50.170 [main] FATAL beta.Demo2 - I am a fatal
+20:24:50.171 [main] TRACE beta.Demo2 - I am a trace
+20:24:50.171 [main] WARN  beta.Demo2 - I am a warn

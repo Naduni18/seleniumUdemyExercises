@@ -1,0 +1,45 @@
+/**
+ * 
+ */
+package savingsDepartment;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+/**
+ * @author Naduni
+ *
+ */
+public class SavingsAccount {
+	@Test
+	public void login() {
+		System.out.println("savings Account login");
+	}
+	@Test
+	public void mobile_login() {
+		System.out.println("savings Account mobile login");
+	}
+	
+	@Test
+	public void logout() {
+		System.out.println("savings Account logout");
+	}
+	
+	@Test
+	public void mobile_logout() {
+		System.out.println("savings Account mobile logout");
+	}
+	@BeforeMethod
+	public void beforeMethoddo() {
+		System.out.println("before method");
+	}
+	
+	@BeforeClass
+	public void beforeClassdo() {
+		System.out.println("before class");
+	}
+	
+}

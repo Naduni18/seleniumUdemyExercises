@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Suite">
+    <test thread-count="5" name="Demo Test3">
+    <groups>
+    <run>
+    <include name="smoke"/>
+    </run>
+    </groups>
+     <classes>
+      <class name="loanDepartment.CarLoan"/>
+      <class name="loanDepartment.PersonalLoan"/>
+       <class name="loanDepartment.HouseLoan"/>
+       <class name="loanDepartment.BusinessLoan"/>
+       </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Demo Test4">
+    <groups>
+    <run>
+    <exclude name="smoke"/>
+    </run>
+    </groups>
+     <classes>
+      <class name="savingsDepartment.KidsAccount"/>
+      <class name="savingsDepartment.SavingsAccount"/>
+       </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

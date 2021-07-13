@@ -1,0 +1,39 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+/**
+ * 
+ */
+
+/**
+ * @author Naduni
+ *
+ */
+public class Jdbconnection {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// "jdbc:mysql://"+host+":"+port+"/databasename";
+		String host = "localhost";
+		String port = "3308";
+		String databasename = "qadbt";
+		String url = "jdbc:mysql://localhost:3308/qadbt";
+		Connection conn;
+		try {
+			conn = DriverManager.getConnection(url, "Naduni", "Redberry*7");
+			Statement query_ = conn.createStatement();
+			String qry = "SELECT*FROM EmployeeInfo";
+			ResultSet rs = query_.executeQuery(qry);
+			System.out.println(rs.toString());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
